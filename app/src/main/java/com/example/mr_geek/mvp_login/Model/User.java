@@ -20,7 +20,7 @@ public class User implements IUser{
     }
 
     @Override
-    public boolean isValide() {
+    public boolean isValid() {
         return !password.trim().isEmpty()
                 && password.length()>=8 &&
                 Patterns.EMAIL_ADDRESS.matcher(email).matches();

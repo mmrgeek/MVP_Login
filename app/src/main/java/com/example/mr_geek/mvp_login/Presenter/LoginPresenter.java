@@ -13,7 +13,7 @@ public class LoginPresenter implements ILoginPresenter {
     @Override
     public void onLogin(String email, String password) {
         User user = new User(email,password);
-        if (user.isValide())
+        if (user.isValid())
             loginView.onLoginResult("Login succeeded");
         else
             loginView.onLoginResult("Login failed");
